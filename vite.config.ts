@@ -93,6 +93,7 @@ export default defineConfig((config) => {
     },
     build: {
       target: 'esnext',
+      sourcemap: false, // 显式关闭 sourcemap
       rollupOptions: {
         output: {
           format: 'esm',
